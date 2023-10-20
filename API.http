@@ -1,9 +1,18 @@
 ### GET EVENT
 GET http://localhost:3000/event
 
+### GET EVENT BY ID
+GET http://localhost:3000/event/1
+
 
 ### CREATE EVENT
-POST http://localhost:3000/event
+POST http://localhost:3000/event HTTP/1.1
+content-type: application/json
+
+{
+  "name": "sample",
+  "time": "Wed, 21 Oct 2015 18:27:50 GMT"
+}
 
 ### DELETE EVENT
 
