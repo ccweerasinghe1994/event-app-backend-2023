@@ -1,0 +1,14 @@
+### GET EVENT
+GET http://localhost:3000/event
+
+
+### CREATE EVENT
+POST http://localhost:3000/event
+
+### DELETE EVENT
+
+DELETE http://localhost:3000/event
+
+### UPDATE EVENT
+PATCH http://localhost:3000/event
+
