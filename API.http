@@ -11,14 +11,24 @@ POST http://localhost:3000/event HTTP/1.1
 content-type: application/json
 
 {
-  "name": "sample",
-  "time": "Wed, 21 Oct 2015 18:27:50 GMT"
+  "name": "david",
+  "when": "2021-01-01T00:00:00.000Z",
+  "address": "address",
+  "description": "test description"
 }
 
 ### DELETE EVENT
 
-DELETE http://localhost:3000/event/1 HTTP/1.1
+DELETE http://localhost:3000/event/3 HTTP/1.1
 
 ### UPDATE EVENT
 PATCH http://localhost:3000/event/1 HTTP/1.1
+content-type: application/json
+
+{
+  "name": "david update",
+  "when": "2021-01-01T00:00:00.000Z",
+  "address": "address",
+  "description": "test description"
+}
 
