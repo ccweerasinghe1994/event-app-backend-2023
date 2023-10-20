@@ -1,5 +1,6 @@
-### GET EVENT
-GET http://localhost:3000/event
+### GET ALL EVENT
+GET http://localhost:3000/event HTTP/1.1
+content-type: application/json
 
 ### GET EVENT BY ID
 GET http://localhost:3000/event/1
@@ -16,8 +17,8 @@ content-type: application/json
 
 ### DELETE EVENT
 
-DELETE http://localhost:3000/event
+DELETE http://localhost:3000/event/1 HTTP/1.1
 
 ### UPDATE EVENT
-PATCH http://localhost:3000/event
+PATCH http://localhost:3000/event/1 HTTP/1.1
 
